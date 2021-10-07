@@ -1,0 +1,24 @@
+<div class="section">
+    <h3 class="bg-secondary text-center p-2">Product Details</h3>
+    <table class="table table-bordered">
+        <thead>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Description</th>
+            <th>Product Catgeory</th>
+            <th>Product Quantity</th>
+        </thead>
+        <tbody>
+            <tr *ngIf="product != undefined">
+                <td>{{product.prodId}}</td>
+                <td>{{product.prodName}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.category}}</td>
+                <td>{{product.quantity}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3><a routerLink="">Back To Home</a></h3>
+</div>

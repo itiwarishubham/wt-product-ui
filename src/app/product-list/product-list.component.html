@@ -1,0 +1,15 @@
+<div class="section">
+    <h3 class="bg-secondary p-2 text-center">Product List</h3>
+    <table class="table table-stripped">
+        <thead>
+            <th>Product Id</th>
+            <th>Product Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products; let i=index">
+                <td>{{product.prodId}}</td>
+                <td><a routerLink="/product-details/{{product.prodId}}">{{product.prodName}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
